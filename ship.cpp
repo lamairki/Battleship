@@ -1,4 +1,4 @@
-#include "ship.h"
+#include "ship.hpp"
 
 Ship::Ship(Ship::shipType sT, int nH, char sC) {
     this-> shipClass = sT;

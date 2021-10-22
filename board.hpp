@@ -1,5 +1,5 @@
-#ifndef         __H_BOARD__
-#define         __H_BOARD__
+#ifndef         __HPP_BOARD__
+#define         __HPP_BOARD__
 
 	class Board {
 
@@ -31,7 +31,7 @@
 		Board();
 		bool placeShip(Ship &s, int row, int col, direction d);
 		char hitMiss(int row, int col);
-		
+
 
 
 

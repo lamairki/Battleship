@@ -1,5 +1,5 @@
-#ifndef         __H_SHIP__
-#define         __H_SHIP__
+#ifndef         __HPP_SHIP__
+#define         __HPP_SHIP__
 
 	class Ship {
 
