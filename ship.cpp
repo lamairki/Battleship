@@ -8,10 +8,10 @@ Ship::Ship(Ship::shipType sT, int nH, char sC) {
     this-> shipStatus = FLOATING;
 }
 
-bool Ship::isHit(Ship &s) {
-    s.numHits += 1;
-    if (s.numHits == s.numHoles) {
-        s.shipStatus = SUNK;
+void Ship::isHit() {
+    this-> numHits += 1;
+    if (this-> numHits == s.numHoles) {
+        this-> shipStatus = SUNK;
     }
 }
 			
@@ -19,6 +19,6 @@ Ship::shipState Ship::isSunk(Ship &s) {
     return s.shipStatus;
 }
 
-Ship::getNumHoles() {
+int Ship::getNumHoles() {
     return this-> numHoles;
 }

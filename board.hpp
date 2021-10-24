@@ -8,42 +8,39 @@
 
 		public:
 
-		enum rowNames {
-			A,
-			B,
-			C,
-			D,
-			E,
-			F,
-			G,
-			H,
-			I,
-			J
-		};
+			enum rowNames {
+				A,
+				B,
+				C,
+				D,
+				E,
+				F,
+				G,
+				H,
+				I,
+				J
+			};
 
-		enum direction {
-			NORTH,
-			EAST,
-			WEST,
-			SOUTH
-		};
+			enum direction {
+				NORTH,
+				EAST,
+				WEST,
+				SOUTH
+			};
 
-		Board();
-		bool placeShip(Ship &s, int row, int col, direction d);
-		char hitMiss(int row, int col);
-
-
-
+			Board();
+			bool placeShip(Ship &s, int row, int col, direction d);
+			char hitMiss(int row, int col);
 
 		private:
 
 			int shipsRemain;
 			bool gameOver;
-			Ship carrier;
-			Ship battleship;
-			Ship Cruiser;
-			Ship submarine;
-			Ship destroyer;
+			Ship::Ship carrier;
+			Ship::Ship battleship;
+			Ship::Ship Cruiser;
+			Ship::Ship submarine;
+			Ship::Ship destroyer;
 
 
 	}
