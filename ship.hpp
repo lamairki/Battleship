@@ -1,12 +1,11 @@
 #ifndef         __HPP_SHIP__
 #define         __HPP_SHIP__
 
+#include <string>
+
 	class Ship {
 
 		public:
-
-			char shipChar;
-
 			enum shipType {
 					CARRIER,
 					BATTLESHIP,
@@ -19,11 +18,14 @@
 				FLOATING,
 				SUNK
 			};
-
+			Ship();
 			Ship(shipType sT, int nH, char sC);
-			bool isHit(Ship &s);
+			void isHit();
 			shipState isSunk(Ship &s);
-			int getNumHoles();
+			int getNumHoles() const ;
+			char shipChar;
+			std::string getShipType() const ;
+			char getShipChar() const ;
 			
 		private:
 
